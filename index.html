@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CHASEplus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="assets/form.css">
+ 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="header py-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-2">
+                <img src="./assets/Component%202.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-8 d-flex flex-wrap justify-content-between">
+                <a href="#about" class="menu-item">О проекте</a>
+                <a href="#money" class="menu-item">Заработок</a>
+                <a href="#dohodnost" class="menu-item">Доходность</a>
+                <a href="#calculator" class="menu-item">Калькулятор</a>
+                <a href="#apartunities" class="menu-item">Преимущества</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main py-5">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-7">
+                <h1 class="h1">
+                    "CHASE" открывается для частных инвесторов
+                </h1>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/779321748?h=4e7645fc1c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;line=0&amp;autoplay=1&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Chase4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="col-md-4">
+                <div class="wrapper">
+                    <h2 class="h2">
+                        Начните зарабатывать<br> вместе с <strong>CHASEPLUS</strong>
+                    </h2>
+                    <form action="send.php" method="get">
+                        <input type="hidden" id="subid" name="subid" value="{subid}">
+                        <input type="hidden" id="pixel" name="pixel" value="{sub3}">
+                        <input type="hidden" id="geo" name="geo" value="usa">
+                        <input type="hidden" id="offer" name="offer" value="CHASEPLUS">
+                        <input type="text" name="firstname" required placeholder="Имя">
+                        <input type="text" name="lastname" required placeholder="Фамилия">
+                        <input type="email" name="email" required placeholder="Email">
+                        <input type="tel" name="phone" required placeholder="Номер телефона" class="phone" autocomplete="off">
+                        <button type="submit" class="btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <div class="checbox-wrapper">
+                        <input type="checkbox" name="checkbox" required checked id="checkbox">
+                        <label for="checkbox">Я даю согласие на сбор адреса моей электронной почты с целью получения коммерческих предложений, которые, по нашему мнению, будут интересны вам, от имени компаний и отраслей, подробно описанных в наших Условиях пользования и Политике конфиденциальности.</label>
+                        </div>
+                        <span class="error-msg" class="hide"></span>
+                        <div style="display:none;">
+                            <input type="number" id="phonecode" name="code">
+                            <input type="text" id="country" name="country">
+                            <input type="hidden" name="subid" value="{subid}">
+                         <input style="display:none" name="pixel" value="<?= $_GET['pixel'] ?>">
+                         <textarea name="utm" style="display:none;"><?php parse_str($_SERVER['QUERY_STRING'], $params);
+                                                                      echo json_encode($params); ?></textarea>
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<marquee bgcolor="#002E6C" loop="-1">
+    <span class="marquee-text">Дмитрий +3,167$</span>
+    <span class="marquee-text">Лариса +1,537$</span>
+    <span class="marquee-text">Василий +5,127$</span>
+    <span class="marquee-text">Ирина +967$</span>
+    <span class="marquee-text">Кирилл +2,167$</span>
+    <span class="marquee-text">Иван +8,142$</span>
+    <span class="marquee-text">Василий +1,162$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Максим +1,127$</span>
+    <span class="marquee-text">Денис +3,127$</span>
+    <span class="marquee-text">Антон +8,124$</span>
+    <span class="marquee-text">Инна +2,162$</span>
+    <span class="marquee-text">Артем +4,117$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Дмитрий +3,167$</span>
+    <span class="marquee-text">Лариса +1,537$</span>
+    <span class="marquee-text">Василий +5,127$</span>
+    <span class="marquee-text">Ирина +967$</span>
+    <span class="marquee-text">Кирилл +2,167$</span>
+    <span class="marquee-text">Иван +8,142$</span>
+    <span class="marquee-text">Василий +1,162$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Максим +1,127$</span>
+    <span class="marquee-text">Денис +3,127$</span>
+    <span class="marquee-text">Антон +8,124$</span>
+    <span class="marquee-text">Инна +2,162$</span>
+    <span class="marquee-text">Артем +4,117$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Дмитрий +3,167$</span>
+    <span class="marquee-text">Лариса +1,537$</span>
+    <span class="marquee-text">Василий +5,127$</span>
+    <span class="marquee-text">Ирина +967$</span>
+    <span class="marquee-text">Кирилл +2,167$</span>
+    <span class="marquee-text">Иван +8,142$</span>
+    <span class="marquee-text">Василий +1,162$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Максим +1,127$</span>
+    <span class="marquee-text">Денис +3,127$</span>
+    <span class="marquee-text">Антон +8,124$</span>
+    <span class="marquee-text">Инна +2,162$</span>
+    <span class="marquee-text">Артем +4,117$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Дмитрий +3,167$</span>
+    <span class="marquee-text">Лариса +1,537$</span>
+    <span class="marquee-text">Василий +5,127$</span>
+    <span class="marquee-text">Ирина +967$</span>
+    <span class="marquee-text">Кирилл +2,167$</span>
+    <span class="marquee-text">Иван +8,142$</span>
+    <span class="marquee-text">Василий +1,162$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+    <span class="marquee-text">Максим +1,127$</span>
+    <span class="marquee-text">Денис +3,127$</span>
+    <span class="marquee-text">Антон +8,124$</span>
+    <span class="marquee-text">Инна +2,162$</span>
+    <span class="marquee-text">Артем +4,117$</span>
+    <span class="marquee-text">Олег +6,625$</span>
+</marquee>
+<section class="second py-5" id="about">
+    <div class="container">
+            <h2 class="h2 text-center pb-5 mb-5">
+                Почему именно CHASEPLUS
+            </h2>
+        <div class="row align-items-stretch pb-5 border-bottom mb-5">
+            <div class="col-md-4">
+                <div class="border">
+                    <div class="item d-flex align-items-center justify-content-between">
+                        <p class="title">Высокий неизменный доход. </p>
+                        <img src="./assets/grommet-icons_money.svg" alt="" class="img-fluid">
+                    </div>
+                    <p class="py-4 px-3 info">
+                        «CHASE» – одна из самых крупнейших американских финансовых организаций . Зарабатываем себе, заработаем и вам.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="border">
+                    <div class="item d-flex align-items-center justify-content-between">
+                        <p class="title">Уверенность в завтрашнем дне </p>
+                        <img src="./assets/bi_shield-check.svg" alt="" class="img-fluid">
+                    </div>
+                    <p class="py-4 px-3 info">
+                        Уверенность в завтрашнем дне и минимальные риски. Доходность активов проверена временем.
+                        Даже в сложные времена "CHASE" всегда оставался на вершине.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="border">
+                    <div class="item d-flex align-items-center justify-content-between">
+                        <p class="title">Простое извлечение прибыли</p>
+                        <img src="./assets/ant-design_reload-time-outline.svg" alt="" class="img-fluid">
+                    </div>
+                    <p class="py-4 px-3 info">
+                        Простое и быстрое извлечение прибыли. Выводим заработанные средства в кратчайшие сроки на любые американские банки или счета
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center pb-5 border-bottom mb-5">
+            <div class="col-md-6">
+                <p class="name">
+                    Джейми Даймон
+                </p>
+                <p class="position mb-4">
+                    Генеральный директор JPMorgan Chase
+                </p>
+                <p class="text_name">
+                    После долгих дискуссий, мы решили открыть для всех граждан доступ к доходам от ресурсов страны. Это наш способ помочь рядовым людям и поддержать экономику страны в сложные времена.
+                    <br><br>
+                    Конечно, мы не забыли и о своей выгоде. Масштабируется наш бизнес, растет спрос на добычу ископаемых, энергоресурсы и производимую нами продукцию. Мы активно выходим на мировые рынки и потому должны постоянно увеличивать объемы. Это еще одна причина, по которой мы решили привлечь частные инвестиции и поделиться своим доходом с гражданами нашей страны.
+                    <br><br>
+                    Программа только начала работать, но уже сейчас у нас есть средние цифры дохода каждого частного инвестора. Сейчас он составляет $800-8500 в месяц. Но у нас грандиозные планы и большие перспективы на мировых рынках. А это значит, что и доход инвесторов будет расти.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/image%2020.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <h2 class="h2 text-center pb-5 mb-5" id="money">
+            Как начать зарабатывать с CHASEPLUS уже сегодня?
+        </h2>
+        <div class="row align-items-stretch pb-5 border-bottom mb-5">
+            <div class="col-md-4 p-5 border-left">
+                    <img src="./assets/fluent_form-28-regular.svg" alt="" class="img-fluid mb-4">
+                    <p class="apartunities mb-5">
+                        Заполните форму для регистрации (форма выше).
+                    </p>
+                    <a href="#" class="apart-btn">ПЕРЕЙТИ</a>
+            </div>
+            <div class="col-md-4 p-5 border-left">
+                    <img src="./assets/ph_phone-call-light.svg" alt="" class="img-fluid mb-4">
+                    <p class="apartunities mb-5">
+                        Дождаться звонка от менеджера компании и подтвердить регистрацию
+                    </p>
+                    <a href="#" class="apart-btn">ПЕРЕЙТИ</a>
+            </div>
+            <div class="col-md-4 p-5 border-left">
+                    <img src="./assets/fluent_money-hand-20-regular.svg" alt="" class="img-fluid mb-4">
+                    <p class="apartunities mb-5">
+                        Выберите размер инвестиции и получите первый доход уже через 30 дней.
+                    </p>
+                    <a href="#" class="apart-btn">ПЕРЕЙТИ</a>
+            </div>
+        </div>
+
+        <div class=" py-5" id="calculator">
+            <h2 class="h2 text-center mb-5 ">
+                Сколько я заработаю?
+            </h2>
+            <div class="flex flex-col text-center font-bold mb-4 sm:mb-10 px-5">
+                <label class="block text-center font-bold mb-2 calculate-text">Ваша инвестиция</label>
+                <input type="text" class="js-range-slider" style="display: none;" name="my_range" value="10000" tabindex="-1" readonly="">
+            </div>
+            <div class="d-flex align-items-center flex-col mb-5">
+                <label class="block text-center font-bold calculate-text">Ваша прибыль</label>
+                <h3 class="text-2xl text-center font-bold font-ubuntu" id="calcResult">15840 руб.</h3>
+            </div>
+        </div>
+
+
+
+
+
+        <h2 class="h2 text-center pb-5 mb-5" id="dohodnost">
+            Клиенты, которые изменили свою жизнь
+        </h2>
+        <div class="row justify-content-center pb-5 border-bottom mb-5">
+            <div class="col-md-12">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide py-3 px-4">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 border-right">
+                                    <p class="swiper-name mb-4">
+                                        <b>АЛЕКСАНДР ШВИТОВ</b><br>
+                                        27 лет
+                                    </p>
+                                    <p class="swiper-cost">
+                                        ЗАРАБТОК ЗА МЕСЯЦ:<br>
+                                        <b>3,891$</b>
+                                    </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="swiper-text">
+                                        Привет всем. Я попробовал инвестировать в CHASEPLUS, и это хорошо сработало для меня, как в плане прибыли, так и в плане моей жизни. Недавно родился мой сын, и теперь я могу оплатить для него лучший детский сад и государственную школу. А сейчас мы с женой собираемся в отпуск, чего я давно не делал. Спасибо CHASEPLUS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide py-3 px-4">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 border-right">
+                                    <p class="swiper-name mb-4">
+                                        <b>ИГОРЬ ЛАВРИН</b><br>
+                                        34 года
+                                    </p>
+                                    <p class="swiper-cost">
+                                        ЗАРАБТОК ЗА МЕСЯЦ:
+                                        <br>
+                                        <b>8,182$</b>
+                                    </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="swiper-text">
+                                        Я уже давно инвестирую в CHASEPLUS, который помог мне изменить свою жизнь совершенно по-другому. Сейчас у меня есть стабильный доход, который становится все больше и больше, любящая жена, две дочери, одна из которых уже учится в одном из лучших университетов мира, а другая идет в третий класс. Еще раз большое спасибо CHASEPLUS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide py-3 px-4">
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 border-right">
+                                    <p class="swiper-name mb-4">
+                                        <b>ИВАН САЛЬНИКОВ</b><br>
+                                        48 лет
+                                    </p>
+                                    <p class="swiper-cost">
+                                        ЗАРАБТОК ЗА МЕСЯЦ:<br>
+                                        <b>4,718$</b>
+                                    </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <p class="swiper-text">
+                                        Я всю жизнь проработал на стройке, поэтому здоровье у меня слабое. Вскоре мой сын, который хорошо разбирается в инвестициях, показал мне, как инвестировать в CHASEPLUS. Он показал мне, как правильно инвестировать и что делать. В результате я нигде не работаю и получаю доход от инвестиций. Я сам оплатил очень дорогую операцию на спине. И сейчас я чувствую себя очень хорошо.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="last" id="apartunities">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <img src="./assets/Component%202.png" alt="" class="img-fluid mb-5">
+                <h3 class="h1">
+                    Начните зарабатывать <br>вместе с <strong>CHASEPLUS</strong>
+                </h3>
+            </div>
+            <div class="col-md-4 border">
+                <div class="wrapper">
+                <form action="send.php" method="get">
+                    <input type="hidden" id="subid" name="subid" value="{subid}">
+                    <input type="hidden" id="pixel" name="pixel" value="{sub3}">
+                    <input type="hidden" id="geo" name="geo" value="usa">
+                    <input type="hidden" id="offer" name="offer" value="CHASEPLUS">
+                    <input type="text" name="firstname" required placeholder="Имя">
+                    <input type="text" name="lastname" required placeholder="Фамилия">
+                    <input type="email" name="email" required placeholder="Email">
+                    <input type="tel" name="phone" required placeholder="Номер телефона" class="phone" autocomplete="off">
+                    <button type="submit" class="btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        <div class="checbox-wrapper">
+                        <input type="checkbox" name="checkbox" required checked id="checkbox">
+                        <label for="checkbox">Я даю согласие на сбор адреса моей электронной почты с целью получения коммерческих предложений, которые, по нашему мнению, будут интересны вам, от имени компаний и отраслей, подробно описанных в наших Условиях пользования и Политике конфиденциальности.</label>
+                        </div>
+                        <span class="error-msg" class="hide"></span>
+                        <div style="display:none;">
+                            <input type="number" id="phonecode" name="code">
+                            <input type="text" id="country" name="country">
+                            <input type="hidden" name="subid" value="{subid}">
+                         <input style="display:none" name="pixel" value="<?= $_GET['pixel'] ?>">
+                         <textarea name="utm" style="display:none;"><?php parse_str($_SERVER['QUERY_STRING'], $params);
+                                                                      echo json_encode($params); ?></textarea>
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-5">
+                <a class="privacy" href="./privacy.html">
+                    Пользовательское соглашение
+                    /
+                    Политика конфиденциальности
+                </a>
+            </div>
+            <div class="col-md-2">
+                <p class="last_test">
+                    CHSPLS © 2022
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="assets/form.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    $(function () {
+        $(".js-range-slider").ionRangeSlider({
+            skin: "round",
+            min: 15000,
+            max: 1000000,
+            from: 15000,
+            max_postfix: "+",
+            postfix: " руб.",
+            grid: true,
+            onStart: function (data) {
+                $("#calcResult").text(Math.round((data.from * 0.13)) + ' руб.');
+            },
+            onChange: function (data) {
+                if(data.from < 150000) {
+                    $("#calcResult").text(Math.round((data.from * 0.13)) + ' руб.');
+                }else if(data.from > 150000 && data.from < 500000){
+                    $("#calcResult").text(Math.round((data.from * 0.17)) + ' руб.');
+                }else{
+                    $("#calcResult").text(Math.round((data.from * 0.21)) + ' руб.');
+                }
+            },
+        });
+    });
+</script>
+</body>
+</html>
